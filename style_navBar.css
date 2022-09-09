@@ -17,12 +17,12 @@
 nav .slider{
     position: absolute;
     background: plum;
-    height: 10%;
+    height: 100%;
     width: 20%;
-    left: 0;
     border-radius: 4px;
     transition: all 0.3ms ease;
 }
+
 
 input[type="radio"]{
 }
