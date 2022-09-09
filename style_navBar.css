@@ -1,16 +1,43 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px solid red;
 }
 
 #tab1:checked ~ nav label.tab1,
 #tab2:checked ~ nav label.tab2,
 #tab3:checked ~ nav label.tab3,
 #tab4:checked ~ nav label.tab4,
-#tab5:checked ~ nav label.tab5{
-    color: red;
+    #tab5:checked ~ nav label.tab5
+{
+    color: #aaa014;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+nav .slider{
+    position: absolute;
+    background: plum;
+    height: 10%;
+    width: 20%;
+    left: 0;
+    border-radius: 4px;
+    transition: all 0.3ms ease;
+}
+
+input[type="radio"]{
+}
+
+#tab2:checked ~ nav .slider{
+    left: 20%;
+}
+#tab3:checked ~ nav .slider{
+    left: 40%;
+}
+#tab4:checked ~ nav .slider{
+    left: 60%;
+}
+#tab5:checked ~ nav .slider{
+    left: 80%;
 }
 
 
