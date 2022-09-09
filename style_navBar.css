@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+#tab1:checked ~ nav label.tab1,
+#tab2:checked ~ nav label.tab2,
+#tab3:checked ~ nav label.tab3,
+#tab4:checked ~ nav label.tab4,
+#tab5:checked ~ nav label.tab5{
+    color: red;
+}
+
+
+
