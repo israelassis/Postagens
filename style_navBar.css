@@ -11,16 +11,32 @@ body{
 
 }
 
-#tab1:checked ~ nav label.tab1,
-#tab2:checked ~ nav label.tab2,
-#tab3:checked ~ nav label.tab3,
-#tab4:checked ~ nav label.tab4,
+    #tab1:checked ~ nav label.tab1,
+    #tab2:checked ~ nav label.tab2,
+    #tab3:checked ~ nav label.tab3,
+    #tab4:checked ~ nav label.tab4,
     #tab5:checked ~ nav label.tab5
-{
-    color: #aaa014;
+    {
+    color: #ec6211;
     font-weight: 600;
     font-size: 21px;
-}
+    }
+
+    #tab1:checked ~nav .slider{
+        left: 0%;
+    }
+    #tab2:checked ~ nav .slider{
+    left: 20%;
+    }
+    #tab3:checked ~ nav .slider{
+    left: 40%;
+    }
+    #tab4:checked ~ nav .slider{
+    left: 60%;
+    }
+    #tab5:checked ~ nav .slider{
+    left: 80%;  
+    }
 
 nav .slider{
     position: absolute;
@@ -38,24 +54,10 @@ nav .slider{
     animation: none;
 }
 
-
-
 input[type="radio"]{
+    height: 41px;
+    width: 41px;
 }
-
-#tab2:checked ~ nav .slider{
-    left: 20%;
-}
-#tab3:checked ~ nav .slider{
-    left: 40%;
-}
-#tab4:checked ~ nav .slider{
-    left: 60%;
-}
-#tab5:checked ~ nav .slider{
-    left: 80%;
-}
-
 
 .button{
     font-size: 44px;
